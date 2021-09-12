@@ -1,9 +1,7 @@
 'use strict'
 const fs = require('fs')
 
-let isPodman
-
-function hasContainerEnv() {
+const hasContainerEnv = () => {
     try {
         fs.statSync('/run/.containerenv')
         return true
@@ -12,10 +10,8 @@ function hasContainerEnv() {
     }
 }
 
-module.exports = () => {
-    if (isPodman === undefined) {
-        isPodman = hasContainerEnv()
-    }
-
-    return isPodman
+const isPodman = () => {
+    return hasContainerEnv()
 }
+
+module.exports = isPodman

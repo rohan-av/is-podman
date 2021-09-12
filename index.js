@@ -14,8 +14,6 @@ const hasContainerEnv = () => {
     }
 }
 
-const isPodman = () => {
+module.exports = () => {
     return hasContainerEnv()
 }
-
-module.exports = isPodman

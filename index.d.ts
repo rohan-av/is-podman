@@ -3,10 +3,10 @@ Check if the process is running inside a Podman container.
 
 @example
 ```
-import isPodman = require('is-podman);
+import isPodman = require('is-podman)
 
 if (isPodman()) {
-	console.log('Running inside a Podman container');
+	console.log('Running inside a Podman container')
 }
 ```
 */

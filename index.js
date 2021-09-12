@@ -2,7 +2,7 @@
 const fs = require('fs')
 
 /**
- * Checks for the presence of /run/.containerenv, which is present within Podman containers, but within Docker containers 
+ * Checks for the presence of `/run/.containerenv`, which is present within Podman containers, but not within Docker containers (which have `/.dockerenv` instead)
  * @returns {boolean} 
  */
 const hasContainerEnv = () => {

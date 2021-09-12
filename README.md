@@ -11,7 +11,7 @@ $ npm install is-podman
 ## Usage
 
 ```js
-import isPodman = require('is-podman);
+import isPodman = require('is-podman');
 
 if (isPodman()) {
 	console.log('Running inside a Podman container');
